@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zherong Qian_Registration</title>
+    <style>
+        body {
+            zoom: 125%;
+            background-image: url('OIP.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        #bottom-text {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+    <style>
+        /* 初始链接样式 */
+        a {
+            font-size: 16px;
+            text-decoration: none;
+            color: #0074d9; /* 链接颜色 */
+            transition: font-size 0.3s; /* 添加平滑过渡效果 */
+        }
+    
+        /* 鼠标悬停时的链接样式 */
+        a:hover {
+            font-size: 18px; /* 链接字体大小增大为18px */
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1 style="background-color:rgb(226, 239, 245);">Register for an Account</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="personalweb.html">menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="login.html">Log in</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2 style="background-color:rgb(187, 219, 235);">Registration Form</h2>
+            <form action="registration_process.php" method="post">
+                <label for="username">Username/Name:</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                
+                <label for="confirm_password">Confirm Password:</label><br>
+                <input type="password" id="confirm_password" name="confirm_password" required><br><br>
+                
+                <!-- Additional Personal Information Fields -->
+                <!-- You can add more fields here based on your requirements -->
+                
+                <!-- Data Protection Statement -->
+                <p><input type="checkbox" id="data_protection" name="data_protection" required> I have read and agree to the <a href="privacy_policy.html">Data Protection Statement</a></p>
+                
+                <!-- Terms and Conditions -->
+                <p><input type="checkbox" id="terms_conditions" name="terms_conditions" required> I have read and agree to the <a href="terms_and_conditions.html">Terms and Conditions</a></p>
+                
+                <!-- CAPTCHA (Anti-Spam) -->
+                <label for="captcha">Enter the CAPTCHA code:</label><br>
+                <img src="captcha_image.jpg" alt="CAPTCHA Image"><br>
+                <input type="text" id="captcha" name="captcha" required><br><br>
+                
+                <input type="submit" value="Register">
+            </form>
+        </section>
+        
+        <section>
+            <p><a href="login.html">Already have an account? Log in here.</a></p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Zherong Qian</p>
+    </footer>
+    <div id="bottom-text">
+        Copyright © 2023. University of Idaho. Zherong Qian. All Rights Reserved
+    </div>
+</body>
+</html>
